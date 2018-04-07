@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1520690270 source:/home/mirsahib/Desktop/Graph/BFS.cpp
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<queue>
+	"BFS.h"
+	"node.h"
+
+1520780768 /home/mirsahib/Desktop/Graph/BFS.h
+	"node.h"
+
+1520690254 source:/home/mirsahib/Desktop/Graph/main.cpp
+	<iostream>
+	"BFS.h"
+
+1520687710 /home/mirsahib/Desktop/Graph/node.h
+
+1520686941 source:/home/mirsahib/Desktop/Graph/node.cpp
+	"node.h"
+
