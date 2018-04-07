@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1522927526 source:c:\users\cis101.secs\desktop\priorityqueue\main.cpp
+	<iostream>
+	"PriorityQueue.h"
+	"node.h"
+
+1522927464 
+
+1522927364 c:\users\cis101.secs\desktop\priorityqueue\priorityqueue.h
+	"node.h"
+
+1522927441 c:\users\cis101.secs\desktop\priorityqueue\node.h
+
+1522926107 source:c:\users\cis101.secs\desktop\priorityqueue\node.cpp
+	<iostream>
+	"node.h"
+
+1522927464 source:c:\users\cis101.secs\desktop\priorityqueue\priorityqueue.cpp
+	<iostream>
+	"PriorityQueue.h"
+	"node.h"
+
+1523020131 source:/home/mirsahib/Desktop/PriorityQueue/node.cpp
+	<iostream>
+	"node.h"
+
+1523020128 /home/mirsahib/Desktop/PriorityQueue/node.h
+
+1523108088 source:/home/mirsahib/Desktop/PriorityQueue/main.cpp
+	<iostream>
+	"PriorityQueue.h"
+	"node.h"
+
+1523107995 /home/mirsahib/Desktop/PriorityQueue/PriorityQueue.h
+	"node.h"
+
+1523109150 source:/home/mirsahib/Desktop/PriorityQueue/PriorityQueue.cpp
+	<iostream>
+	"PriorityQueue.h"
+	"node.h"
+
