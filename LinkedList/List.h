@@ -23,8 +23,10 @@ public:
     List();
     void push_front(T element);
     void push_back(T element);
-    void insert(int index,T element);  
-  	void erase();
+    void insert(int index,T element);
+    void remove(T element);
+    void pop_front();
+    void pop_back();
   	void reverse();
   	void reversePrint();
   	bool empty();
@@ -101,9 +103,58 @@ void List<T>::insert(int index,T element){
 		cout<<"Index out of bound"<<endl;
 	}
 }
+template<typename T>
+void List<T>::remove(T element){
+	if(empty()){
+		cout<<"List is empty"<<endl;
+	}else{
+		curr = head;
+		int counter = 0;
+		for(int i=0;i<size_counter;i++){
+			if(curr->data==element && i==0){
+				pop_front();
+                counter=1;
+			}else if(curr->data==element){
+                curr->prev->next = curr->next;
+				curr->next->prev = curr->prev;
+				delete curr;
+				counter=1;
+			}
+			curr=curr->next;
+		}
+		if(counter==0){
+			cout<<"element is not in the list"<<endl;
+		}
+	}
+}
+template<typename T>
+void List<T>::pop_front(){
+	if(empty()){
+		cout<<"List is empty"<<endl;
+	}else{
+		temp = head->next;
+		temp->prev=NULL;
+		delete head;
+		head = temp;
+	}
+}
+template<typename T>
+void List<T>::pop_back(){
+	if(empty()){
+		cout<<"List is empty"<<endl;
+	}else{
+		curr = head;
+		while(curr->next!=NULL){
+			curr=curr->next;
+		}
+		curr->prev->next=NULL;
+		delete curr;
+	}
+}
 
 template<typename T>
 void List<T>::reverse(){
+	//not done yet
 	curr = head;
 	node<T> *prev,*next;
 	prev = NULL;

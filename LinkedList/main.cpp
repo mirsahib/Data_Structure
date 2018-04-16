@@ -16,7 +16,10 @@ int main(){
 	myList.push_back(5);
 	myList.push_back(6);
 	myList.insert(5,13);
-	//myList.reverse();
+	myList.remove(4);
+	myList.pop_front();
+	myList.pop_back();
+	myList.reverse();
 	myList.print();
 	myList.reversePrint();
 
